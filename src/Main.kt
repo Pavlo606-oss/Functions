@@ -1,6 +1,6 @@
 fun main(){
-    var student: Student? = Student()
-    var stu1 = student?.let { st -> //Ничего не возвращает, работем с объектом через ключевое слово st
+    val student: Student? = Student()
+    val stu1 = student?.let { st -> //Ничего не возвращает, работем с объектом через ключевое слово st
 
         st.hi()
         st.bye()
@@ -8,7 +8,7 @@ fun main(){
     }
     println(student?.name)
 
-    var student_new = student?.apply { //Возвращает изменённый объкт калсса студент
+    val student_new = student?.apply { //Возвращает изменённый объкт калсса студент
 
         hi()
         bye()
